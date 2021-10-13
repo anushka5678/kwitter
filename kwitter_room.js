@@ -1,5 +1,5 @@
 
-const firebaseConfig = {
+/*const firebaseConfig = {
       apiKey: "AIzaSyBNbFoZrBZwL3o6Jhgov0yCtWUJYeBmopc",
       authDomain: "kwitter-cf38b.firebaseapp.com",
       databaseURL: "https://kwitter-cf38b-default-rtdb.firebaseio.com",
@@ -11,7 +11,7 @@ const firebaseConfig = {
     };
     
     // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
+    const app = initializeApp(firebaseConfig);*/
 
     function addRoom(){
       room_name= document.getElementById("room_name").value;
@@ -36,4 +36,9 @@ function redirectToRoomNames(name){
       console.log(name);
       localStorage.setItem("room_name", name);
       window.location = "kwitter_page.html";
+}
+function logout(){
+      localStorage.removeItem("user_name");
+      localStorage.removeItem("room_name");
+      window.location= "index.html";
 }
