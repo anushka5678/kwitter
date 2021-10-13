@@ -1,16 +1,16 @@
 const firebaseConfig = {
-      apiKey: "AIzaSyBNbFoZrBZwL3o6Jhgov0yCtWUJYeBmopc",
-      authDomain: "kwitter-cf38b.firebaseapp.com",
-      databaseURL: "https://kwitter-cf38b-default-rtdb.firebaseio.com",
-      projectId: "kwitter-cf38b",
-      storageBucket: "kwitter-cf38b.appspot.com",
-      messagingSenderId: "798183722689",
-      appId: "1:798183722689:web:752199a3c461846ef7ce40",
-      measurementId: "G-VSHQXF9VKW"
+      apiKey: "AIzaSyCYwZiRXmQ_qaU_PLLxlP-DmgRqCA1qhMQ",
+      authDomain: "kwitter-fbb38.firebaseapp.com",
+      databaseURL: "https://kwitter-fbb38-default-rtdb.firebaseio.com",
+      projectId: "kwitter-fbb38",
+      storageBucket: "kwitter-fbb38.appspot.com",
+      messagingSenderId: "812902654998",
+      appId: "1:812902654998:web:8851baf71271cb297b8137",
+      measurementId: "G-1YD9MBYB77"
     };
     
     // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
 function send(){
       msg= document.getElementById("msg").value;
       firebase.database().ref(room_name).push({
