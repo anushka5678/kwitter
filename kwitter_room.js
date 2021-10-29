@@ -1,5 +1,5 @@
 
-const firebaseConfig = {
+var firebaseConfig = {
       apiKey: "AIzaSyCYwZiRXmQ_qaU_PLLxlP-DmgRqCA1qhMQ",
       authDomain: "kwitter-fbb38.firebaseapp.com",
       databaseURL: "https://kwitter-fbb38-default-rtdb.firebaseio.com",
@@ -11,7 +11,7 @@ const firebaseConfig = {
     };
     
     // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
 
     function addRoom(){
       room_name= document.getElementById("room_name").value;
